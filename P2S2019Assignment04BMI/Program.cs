@@ -6,17 +6,23 @@ using System.Windows.Forms;
 
 namespace P2S2019Assignment04BMI
 {
-    static class Program
+    internal static class Program
     {
+        public static SplashForm startForm;
+        public static BMICalculatorForm bmiform;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            startForm = new SplashForm();
+            bmiform = new BMICalculatorForm();
+
+            Application.Run(new SplashForm());
         }
     }
 }
