@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace P2S2019Assignment04BMI
 {
-    //Name: Shemar Stcyr Student number: 301037086 Data: 7/26/29 Discription: BMI Calculator 
+    //Name: Shemar Stcyr Student number: 301037086 Data: 7/26/29 Discription: BMI Calculator
     public partial class BMICalculatorForm : Form
     {
         public string outputString { get; set; }
@@ -204,7 +204,7 @@ namespace P2S2019Assignment04BMI
             }
             else
             {
-               // Application.Exit();
+                // Application.Exit();
             }
         }
 
@@ -219,53 +219,5 @@ namespace P2S2019Assignment04BMI
             Calculatebutton.Visible = true;
             units = "imperial";
         }
-
-        //private void CalculatorButtonTableLayoutPanel_Click(object sender, EventArgs e)
-        //{
-        //    var TheButton = sender as Button;
-        //    var tag = TheButton.Tag.ToString();
-
-        //    int buttonValue;
-        //    bool resultCondition = int.TryParse(tag, out buttonValue);
-
-        //    // If the use pressed a number button
-        //    if (resultCondition)
-        //    {
-        //        int maxSize = 3;
-        //        if (decimalExists)
-        //        {
-        //            maxSize = 5;
-        //        }
-
-        //        if ((outputString != "0") && (ResultLabel.Text.Count() < maxSize))
-        //        {
-        //            outputString += tag;
-        //            ResultLabel.Text = outputString;
-        //        }
-        //    }
-
-        //    // if the user pressed a button that is not a number
-        //    if (!resultCondition)
-        //    {
-        //        switch (tag)
-        //        {
-        //            case "clear":
-        //                clearNumericKeyboard();
-        //                break;
-
-        //            case "back":
-        //                removeLastCharacterFromResultLabel();
-        //                break;
-
-        //            case "done":
-        //                finalizeOutput();
-        //                break;
-
-        //            case "decimal":
-        //                addDecimalToResultLabel();
-        //                break;
-        //        }
-        //    }
-        //}
     }
 }
